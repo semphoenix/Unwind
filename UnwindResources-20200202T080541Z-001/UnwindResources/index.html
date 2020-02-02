@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Zen Matching</title>
+    <meta name="description" content="">
+    <script defer src="js/app.js"></script>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<head>
+    <style>
+
+    @font-face{
+    font-family: "Ostrich";
+    src: url("img/ostrich-regular.ttf");
+}
+        .button {
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            border-radius: 25px;
+            background-color: #ffc4c4;
+            color: #ffffff;
+            border: 20px solid #ffffff;
+            font-family: "Ostrich";
+        }
+
+            .button1:hover {
+                background-color: #ffffff;
+                color: black;
+            }
+    </style>
+</head>
+<div class="button button1">
+    <a href="http://localhost/UnwindResources/Unwind.html">The Main Page</a><!--add html here-->
+</div>
+<div style="float:right">
+    <img hspace="0" vspace="0" src="https://elkgroveses.com/image/147019-full_falling-flower-petals-gif-flowers-healthy.gif" style="width:300px;height:800px;">
+ </div>
+<div style="float:left">
+    <img hspace="0" vspace="0" src="https://elkgroveses.com/image/147019-full_falling-flower-petals-gif-flowers-healthy.gif" style="width:300px;height:800px;">
+</div>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Zen Match</h1>
+            </header>
+            <section class="score-panel">
+                <ul class="stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span class="moves">0</span> Moves
+                <span class="timer"> </span>
+                <div class="restart">
+                    <i class="fa fa-repeat"></i>
+                </div>
+            </section>
+            <ul class="deck">
+                <li id="0" class="card"><i class="fa fa-bug"></i></li>
+                <li id="1" class="card"><i class="fa fa-tree"></i></li>
+                <li id="2" class="card"><i class="fa fa-cloud"></i></li>
+                <li id="3" class="card"><i class="fa fa-cog"></i></li>
+                <li id="4" class="card"><i class="fa fa-cogs"></i></li>
+                <li id="5" class="card"><i class="fa fa-heart"></i></li>
+                <li id="6" class="card"><i class="fa fa-leaf"></i></li>
+                <li id="7" class="card"><i class="fa fa-paw"></i></li>
+                <li id="8" class="card"><i class="fa fa-bug"></i></li>
+                <li id="9" class="card"><i class="fa fa-tree"></i></li>
+                <li id="10" class="card"><i class="fa fa-cloud"></i></li>
+                <li id="11" class="card"><i class="fa fa-cog"></i></li>
+                <li id="12" class="card"><i class="fa fa-cogs"></i></li>
+                <li id="13" class="card"><i class="fa fa-heart"></i></li>
+                <li id="14" class="card"><i class="fa fa-leaf"></i></li>
+                <li id="15" class="card"><i class="fa fa-paw"></i></li>
+            </ul>
+            
+            <!-- The Modal -->
+            <button id="modal" class="modal show">
+                Ready to Play? <br><br>
+                Enjoy playing this relaxing matching game.
+                <br /><br />
+                Click to Play
+            </button>
+
+        </div>
+    </body>
+</html>

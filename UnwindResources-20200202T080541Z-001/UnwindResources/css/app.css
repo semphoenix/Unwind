@@ -1,0 +1,176 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0e6e6;
+    font-family: 'Coda', cursive;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.button {
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            border-radius: 25px;
+            background-color: #ffc4c4;
+            color: #ffffff;
+            border: 8px solid #ffffff;
+        }
+
+            .button1:hover {
+                background-color: #ffffff;
+                color: black;
+            }
+
+        .button2 {
+            border-radius: 25px;
+            background-color: #ffc4c4;
+            color: #ffffff;
+            border: 8px solid #ffffff;
+        }
+
+            .button2:hover {
+                background-color: #ffffff;
+                color: black;
+            }
+
+        .button3 {
+            border-radius: 25px;
+            background-color: #ffc4c4;
+            color: #ffffff;
+            border: 8px solid #ffffff;
+        }
+
+            .button3:hover {
+                background-color: #ffffff;
+                color: black;
+            }
+
+/* Styles for modal*/
+.modal {
+    width: 660px;
+    height: 620px;
+    padding: 0%;
+    font-size: 3em;
+    position: fixed; 
+    z-index: 1; 
+    background-color: rgba(142, 144, 140, 0.50); 
+    text-align: center;
+    top:  50px
+}
+.modal.show {
+    display: block; 
+}
+.modal.hide {
+    display: none;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #ffbd8e 0%, #d367a2 100%);
+    padding: 32px;
+    border-radius: 10px;
+    /* box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5); */ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #e1b295;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+    .deck .card.match {
+        cursor: default;
+        background: #ecdbdb;
+        font-size: 33px;
+    }
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}

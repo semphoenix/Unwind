@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+ 
+ 
+@font-face{
+    font-family: "Ostrich";
+    src: url("img/ostrich-regular.ttf");
+
+
+}
+body {font-family: "Ostrich";}
+
+
+
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #87CEFA;
+  text-align: center;
+}
+ 
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+ 
+.month ul li {
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+ 
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+ 
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+ 
+ 
+ 
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #92d1f7;
+}
+ 
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: black;
+  text-align: center;
+}
+ 
+.days {
+  padding: 40px 0;
+  background: #eee;
+  margin: 0;
+}
+ 
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size:30px;
+  color: black
+}
+ 
+.days li .active {
+  padding: 5px;
+  background: #aadcfa;
+  color: black !important
+}
+.days li .rat {
+  padding: 5px;
+  background: #aadcfa ;
+  color: #a3a3a3 
+}
+ 
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+ 
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+ 
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+ 
+ h1{margin-right: 150px;
+  margin-left: 80px;
+}
+}
+ 
+body {margin:100px;
+background-color: #ebf4fa;}
+ 
+.navbar {
+  overflow: hidden;
+  background-color: #7d5b5b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: -100px;
+}
+ 
+.navbar a {
+  float: left;
+  display: block;
+  color: #fae1e1;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+ 
+.navbar a:hover {
+  background: #b38181;
+  color: #fae1e1;
+}
+ 
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+ 
+<h1 align="center"><br>Meditation Calendar</h1>
+ 
+ 
+<div class="month">      
+  <ul>
+    <li>January<br><span style="font-size:18px">2020</span></li>
+    <li><img src="https://lh6.googleusercontent.com/proxy/iINSK-_b-A_COI2axt9GnkckVdQXaLtjkY6zuJrSQ1bnw8jPloXAQ5-pVwqdR5emD56ibhZAknHDsGjhK3b-Vu8-" alt="clouds" align="right"style="width:100px;height:50px;" >
+</li>
+<li><img src="https://lh6.googleusercontent.com/proxy/iINSK-_b-A_COI2axt9GnkckVdQXaLtjkY6zuJrSQ1bnw8jPloXAQ5-pVwqdR5emD56ibhZAknHDsGjhK3b-Vu8-" alt="clouds" align="left"style="width:100px;height:50px;" >
+</li>
+ 
+  </ul>
+ 
+</div>
+ 
+ 
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+ 
+<ul class="days">  
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">30</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">31</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">1</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">2</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">3</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">4</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">5</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">6</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">7</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">8</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">9</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">10</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">11</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">12</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">13</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">14</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">15</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">16</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">17</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">18</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">19</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">20</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">21</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">22</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">23</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">24</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">25</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">26</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">27</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">28</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">29</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">30</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">31</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">1</button></li>
+    <li><button onclick="submitButtonStyle(this)" type="submit" class="stylebutton">2</button></li>
+</ul>
+ 
+<div class="navbar">
+    <a href="http://localhost/UnwindResources/Unwind.html">Home</a>
+    <a href="http://localhost/UnwindResources/journal.html">Journal</a>
+    <a href="http://localhost/UnwindResources/compliment.html">Compliment Log</a>
+    <a href="http://localhost/UnwindResources/exercise.html">Exercise Calendar</a>
+    <a href="http://localhost/UnwindResources/meditation.html">Meditation Calendar</a>
+
+  </div>
+ 
+  <script>
+    function submitButtonStyle(_this) {
+      _this.style.backgroundColor = "#aadcfa";
+    }
+    </script>
+</body>
+</html>

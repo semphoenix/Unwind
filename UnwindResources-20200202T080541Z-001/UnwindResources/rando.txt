@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+<div class="navbar">
+  <a href="#Home">Home</a>
+  <a href="http://localhost/mysite/journal.html">Journal</a>
+  <a href="http://localhost/mysite/compliment.html">Compliment Log</a>
+  <a href="http://localhost/mysite/exercise.html">Exercise Calendar</a>
+  <a href="http://localhost/mysite/meditation.html">Meditation Calendar</a>
+  <a href="http://localhost/mysite/index.php">Community</a>
+  <a href="http://localhost/mysite/matching.html">Matching Game</a>
+</div>
+
+
+
+</body>
+</html>
